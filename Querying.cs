@@ -23,7 +23,11 @@ namespace LINQ_notes
                 }
             }
 
-            numbersgreaterThanTen.ForEach(x => Console.Write(x + ", "));
+            numbersgreaterThanTen.ForEach(x => Console.Write(x + " "));
+            Console.WriteLine();
+
+            var example1 = from number in numbers where number > 10 select number;
+            example1.ToList().ForEach(item => Console.Write(item + " "));
             Console.WriteLine();
         }
     }
