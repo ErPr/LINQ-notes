@@ -10,6 +10,10 @@ namespace LINQ_notes
     {
         static void Main(string[] args)
         {
+
+            Querying.RunQuery();
+
         }
+
     }
 }
